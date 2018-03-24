@@ -38,6 +38,8 @@ cd
 sudo apt-get update
 sudo apt-get upgrade
 sudo apt-get install python3-pip python3-dev libpq-dev postgresql postgresql-contrib nginx
+alias python=python3
+alias pip=pip3
 
 # Creating database with Postgresql
 sudo echo -e "
