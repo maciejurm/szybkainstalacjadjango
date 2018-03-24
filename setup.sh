@@ -38,8 +38,6 @@ cd
 sudo apt-get update
 sudo apt-get upgrade
 sudo apt-get install python3-pip python3-dev libpq-dev postgresql postgresql-contrib nginx
-alias python=python3
-alias pip=pip3
 
 # Creating database with Postgresql
 sudo echo -e "
@@ -74,12 +72,12 @@ mkdir /home/$WHOAMI/django/$DJANGO_PROJECT_NAME
 cd /home/$WHOAMI/django/$DJANGO_PROJECT_NAME
 
 
-sudo pip install virtualenv
+sudo pip3 install virtualenv
 cd /home/$WHOAMI/django/$DJANGO_PROJECT_NAME
 virtualenv env
 source env/bin/activate
 
-pip install django gunicorn psycopg2
+pip3 install django gunicorn psycopg2
 
 django-admin.py startproject $DJANGO_PROJECT_NAME .
 
